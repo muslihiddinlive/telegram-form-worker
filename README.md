@@ -21,7 +21,7 @@ Bot token va chat ID faqat Workerda (secret) turadi, brauzerga chiqmaydi.
 ## 2-qadam. Deploy (ikki yo'ldan biri)
 
 ### A) Bir tugma bilan (eng oson)
-Repoga GitHubda joylagach, shu tugmadan foydalaning (`USER/REPO` ni almashtiring):
+Repoga GitHubda joylagach, shu tugmadan foydalaning:
 
 ```
 https://deploy.workers.cloudflare.com/?url=https://github.com/muslihiddinlive/telegram-form-worker
