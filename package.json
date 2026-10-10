@@ -1,0 +1,24 @@
+{
+  "name": "telegram-form-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Istalgan saytdan Telegramga matn/rasm/video/fayl yuboruvchi Cloudflare Worker",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  },
+  "cloudflare": {
+    "bindings": {
+      "BOT_TOKEN": {
+        "description": "@BotFather bergan bot tokeni (masalan 123456:ABC-DEF...)."
+      },
+      "CHAT_ID": {
+        "description": "Xabar keladigan chat ID. Botga /start bosib, @userinfobot dan o'z ID ngizni oling (guruh bo'lsa -100... bilan boshlanadi)."
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+name = "telegram-form"
+main = "src/index.js"
+compatibility_date = "2026-10-10"
+
+# Workers.dev manzil avtomatik beriladi: https://telegram-form.<akkaunt>.workers.dev
+# Maxfiy qiymatlar (BOT_TOKEN, CHAT_ID) bu yerga YOZILMAYDI — `wrangler secret put` bilan qo'yiladi.
+
+[vars]
+# Qaysi saytlar ishlata oladi (vergul bilan). "*" = hamma sayt.
+# Tavsiya: o'z saytingizni yozing, masalan: "https://paradoks.pages.dev,https://mysite.com"
+ALLOWED_ORIGINS = "*"
+# Jami fayl hajmi chegarasi (MB) va fayllar soni
+MAX_FILE_MB = "19"
+MAX_FILES = "5"
+# Telegram xabarida sarlavhada ko'rinadigan sayt nomi (bo'sh bo'lsa Origin hostname olinadi)
+SITE_NAME = ""

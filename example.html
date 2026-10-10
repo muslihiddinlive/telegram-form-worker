@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Telegram form — namuna</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; }
+  </style>
+</head>
+<body>
+  <h1>Aloqa</h1>
+
+  <!-- 1) Shu bitta div yetarli. data-endpoint ga o'z Worker manzilingizni yozing -->
+  <div
+    data-tg-form
+    data-endpoint="https://telegram-form.YOUR-ACCOUNT.workers.dev"
+    data-lang="uz"
+    data-accent="#2563eb"
+  ></div>
+
+  <!-- 2) Skript: tg-form.js ni o'z saytingizga ko'chiring yoki CDN dan ulang -->
+  <script src="./widget/tg-form.js" defer></script>
+</body>
+</html>
